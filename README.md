@@ -28,3 +28,13 @@ root.mainloop()
 |frame_width|the width of the entire widget(replaces "width" from customtkinter.CTkFrame)|int|optional|
 |frame_height|the height of the entire widget(replaces "height" from  customtkinter.CTkFrame)|int|optional|
 |*other parameters|other parameters of  customtkinter.CTkFrame can also be passed|*-depends-*|optional|
+
+## Methods
+### .set_color(color:str)
+    change the display color
+### .configure(**kwargs)
+    change:
+        display_width: int
+        display_height: int
+        display_image: str | PIL.Image.Image
+        all confirurable args of customtkinter.CTkFrame
