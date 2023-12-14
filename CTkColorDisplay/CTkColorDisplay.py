@@ -27,7 +27,7 @@ class CTkColorDisplay(ctk.CTkFrame):
         self.rowconfigure((0),weight=1)
         self._display_color = display_color
         if not verify_hex(self._display_color):
-            raise 
+            raise invalidHexException(f"{self._display_color} is not a valid hex color")
         if isinstance(display_image,str):
             self._original_image = Image.open(display_image)
         elif isinstance(display_image,Image.Image):
