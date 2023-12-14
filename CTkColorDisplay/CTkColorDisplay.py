@@ -53,7 +53,7 @@ class CTkColorDisplay(ctk.CTkFrame):
 
     def _update_color_display(self):
         self._color_display.destroy()
-        self._colored_image = ctk.CTkImage(self._recolor_image(self._original_image,self._display_color),size=())
+        self._colored_image = ctk.CTkImage(self._recolor_image(self._original_image,self._display_color),size=(self._display_width,self._display_height))
         self._color_display = ctk.CTkLabel(self,text="",image=self._colored_image,fg_color="transparent")
         self._color_display.grid(row=0,column=0,sticky="nesw")
         
