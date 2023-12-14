@@ -1,7 +1,7 @@
 from typing import Optional, Tuple, Union
 import customtkinter as ctk
 import tkinter
-from PIL import Image 
+from PIL import Image
 import numpy as np
 from os.path import basename
 from .utilities import hex_to_rgb, verify_hex
@@ -53,7 +53,7 @@ class CTkColorDisplay(ctk.CTkFrame):
 
     def _update_color_display(self):
         self._color_display.destroy()
-        self._colored_image = ctk.CTkImage(self._recolor_image(self._original_image,self._display_color),size=(self._display_width,self._display_height))
+        self._colored_image = ctk.CTkImage(self._recolor_image(self._original_image,self._display_color).resize((self._display_width,self._display_height),resample=Image.NEAREST),size=(self._display_width,self._display_height))
         self._color_display = ctk.CTkLabel(self,text="",image=self._colored_image,fg_color="transparent")
         self._color_display.grid(row=0,column=0,sticky="nesw")
         
