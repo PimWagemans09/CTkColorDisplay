@@ -39,7 +39,8 @@ root.mainloop()
         display_image: str | PIL.Image.Image
         all confirurable args of customtkinter.CTkFrame
 
-## Instalation
+## Instalation*
+*for windows i dont know about other operating systems
 - download `CTkColorDisplay.zip` from Releases
 - right click on the downloaded file and select "extract all"
 - click "browse" and select the folder your project is stored in OR `C:/users/<username>/appdata/local/programs/python/python<version>/lib/site-packages`
