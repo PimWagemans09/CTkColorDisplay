@@ -1,6 +1,9 @@
 ## CTkColorDisplay
 CTkColorDisplay is a customtkinter extension that adds a new widget to display colors
 
+**NOTE: i made this for one of my own projects and decided to upload it,<br/>
+there are probably better way to display colors but i needed it this way**
+
 ![picture of widget](README_images/CTkColorDisplay.png?raw=true)
 
 **code for above window**
