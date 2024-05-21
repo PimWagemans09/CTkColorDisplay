@@ -40,7 +40,7 @@ root.mainloop()
         display_width: int
         display_height: int
         display_image: str | PIL.Image.Image
-        all confirurable args of customtkinter.CTkFrame
+        all configurable args of customtkinter.CTkFrame
 
 ## Instalation*
 *for windows i dont know about other operating systems
